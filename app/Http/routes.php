@@ -14,3 +14,9 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('auth', function(){
+    return OAuth::authorize('facebook');
+});
+
+Route::get('login', 'Welcome@index');

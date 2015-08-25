@@ -78,9 +78,10 @@ return [
     |
     */
 
-    'key' => env('APP_KEY', 'SomeRandomString'),
+    'key' => env('APP_KEY', 'XKT7kHG7QJYnRwHuFSU6lNM6oi0xBNaB'),
 
     'cipher' => 'AES-256-CBC',
+
 
     /*
     |--------------------------------------------------------------------------
@@ -137,12 +138,15 @@ return [
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
 
+
         /*
          * Application Service Providers...
          */
         App\Providers\AppServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
+        'AdamWathan\EloquentOAuthL5\EloquentOAuthServiceProvider',
+
 
     ],
 
@@ -191,6 +195,8 @@ return [
         'URL'       => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View'      => Illuminate\Support\Facades\View::class,
+        'OAuth'     => 'AdamWathan\EloquentOAuth\Facades\OAuth',
+
 
     ],
 
