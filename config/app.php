@@ -146,6 +146,7 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
         'AdamWathan\EloquentOAuthL5\EloquentOAuthServiceProvider',
+        'Illuminate\Html\HtmlServiceProvider',
 
 
     ],
@@ -196,6 +197,8 @@ return [
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View'      => Illuminate\Support\Facades\View::class,
         'OAuth'     => 'AdamWathan\EloquentOAuth\Facades\OAuth',
+        'Html'      => 'Illuminate\Html\HtmlFacade',
+        'Form'      => 'Illuminate\Html\FormFacade',
 
 
     ],

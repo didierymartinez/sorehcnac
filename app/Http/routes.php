@@ -12,11 +12,21 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home.home');
 });
 
 Route::get('auth', function(){
     return OAuth::authorize('facebook');
 });
 
-Route::get('login', 'Welcome@index');
+Route::get('login', function(){
+   
+    OAuth::login('facebook', function($user, $details) {
+        $user->name = $details->full_name;
+        $user->email = $details->email;
+        $user->provider_user_id = $details->id;
+        $user->save();
+    });
+
+    return view('home.registro');
+});

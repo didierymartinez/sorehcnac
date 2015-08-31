@@ -23,7 +23,9 @@ class Welcome extends Controller
             $user->save();
         });
 
-        dd(Auth::user());
+       // dd(Auth::user());
+
+        return view('home.home');
     }
 
     /**

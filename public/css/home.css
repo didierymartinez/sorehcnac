@@ -1,0 +1,276 @@
+
+.jumbotron {
+    background: url(images/53B.jpg);
+    color: #ffffff;
+    background-attachment: fixed;
+    margin-bottom: 0px;
+}
+
+.jumbotron p {
+    padding: 20px 0;
+}
+
+.jumbotron .media {
+    margin: 50px 0;
+}
+
+.jumbotron .media-body h1 {
+    margin-top: 50px;
+}
+
+section.slider {
+    color: #000;
+    background: #ffffff;
+    margin: 40px 0;
+    padding: 40px 0;
+}
+
+section.slider h2 {
+    margin-bottom: 20px;
+}
+
+section.slider .col-md-8 {
+    padding-left: 30px;
+}
+
+.big-list {
+    font-size: 25px;
+    font-weight: 300;
+    margin-top: 40px;
+    line-height: 2;
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.inner-page {
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+}
+
+img {
+    max-width: 100%;
+}
+
+.pricing-intro {
+    margin-bottom: 70px;
+}
+
+section.gray {
+    margin-top: 0px;
+    padding: 30px 0;
+    background: #eeeeee;
+}
+
+section.gray h3 {
+    margin: 0;
+    font-size: 22pt;
+}
+
+.features {
+    padding-top: 30px;
+}
+
+.features .col-lg-4:first-child .icon-stack-base {
+    color: #52AD81;
+}
+
+.features .col-lg-4:nth-child(2) .icon-stack-base {
+    color: #CD5A48;
+}
+
+.features .col-lg-4:last-child .icon-stack-base {
+    color: #51A9D6;
+}
+
+.label {
+    font-weight: 300;
+}
+
+div.feature-box {
+    clear: both;
+}
+
+div.feature-box div.feature-box-icon {
+    -moz-border-radius: 35px;
+    -webkit-border-radius: 35px;
+    background: #ffffff;
+    border-radius: 35px;
+    color: #000000;
+    display: inline-block;
+    float: left;
+    height: 35px;
+    line-height: 35px;
+    margin-right: 10px;
+    position: relative;
+    text-align: center;
+    top: 5px;
+    width: 35px;
+}
+
+div.feature-box div.feature-box-info {
+    padding-left: 50px;
+}
+
+div.feature-box div.feature-box-icon i.image-icon {
+    position: relative;
+    top: 5px;
+}
+
+div.feature-box div.feature-box-icon i.image-icon.small {
+    top: 2px;
+}
+
+footer div.footer-ribbon:before {
+    border-right-color: #005580;
+}
+
+footer div.footer-ribbon:before {
+    border-right: 10px solid #005580;
+    border-top: 16px solid rgba(0, 0, 0, 0);
+    content: "";
+    display: block;
+    height: 0;
+    left: -10px;
+    position: absolute;
+    top: 0;
+    width: 7px;
+}
+
+footer div.container div.row > div {
+    margin-bottom: 25px;
+}
+
+footer div.footer-ribbon {
+    background: #0088CC;
+    margin: -100px 0 0 30px;
+    padding: 10px 20px 6px;
+    position: absolute;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+footer div.footer-ribbon span {
+    color: #ffffff;
+    font-weight: 700;
+}
+
+footer {
+    background: #121214;
+    border-top: 4px solid #1F1F1F;
+    font-size: 0.9em;
+    padding: 80px 0 0;
+    position: relative;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+footer * {
+    color: #ffffff;
+}
+
+.footer-copyright {
+    margin-top: -40px;
+}
+
+
+
+.stepwizard-step p {
+    margin-top: 10px;
+}
+
+.stepwizard-row {
+    display: table-row;
+}
+
+.stepwizard {
+    display: table;
+    width: 100%;
+    position: relative;
+}
+
+.stepwizard-step button[disabled] {
+    opacity: 1 !important;
+    filter: alpha(opacity=100) !important;
+}
+
+.stepwizard-row:before {
+    top: 14px;
+    bottom: 0;
+    position: absolute;
+    content: " ";
+    width: 100%;
+    height: 1px;
+    background-color: #ccc;
+    z-order: 0;
+
+}
+
+.stepwizard-step {
+    display: table-cell;
+    text-align: center;
+    position: relative;
+}
+
+.btn-circle {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    padding: 6px 0;
+    font-size: 12px;
+    line-height: 1.428571429;
+    border-radius: 15px;
+}
+
+
+.btn-social{position:relative;padding-left:44px;text-align:left;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.btn-social :first-child{position:absolute;left:0;top:0;bottom:0;width:32px;line-height:34px;font-size:1.6em;text-align:center;border-right:1px solid rgba(0,0,0,0.2)}
+
+
+.btn-social-icon{position:relative;padding-left:44px;text-align:left;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;height:34px;width:34px;padding-left:0;padding-right:0}.btn-social-icon :first-child{position:absolute;left:0;top:0;bottom:0;width:32px;line-height:34px;font-size:1.6em;text-align:center;border-right:1px solid rgba(0,0,0,0.2)}
+.btn-social-icon.btn-lg{padding-left:61px}.btn-social-icon.btn-lg :first-child{line-height:45px;width:45px;font-size:1.8em}
+.btn-social-icon.btn-sm{padding-left:38px}.btn-social-icon.btn-sm :first-child{line-height:28px;width:28px;font-size:1.4em}
+.btn-social-icon.btn-xs{padding-left:30px}.btn-social-icon.btn-xs :first-child{line-height:20px;width:20px;font-size:1.2em}
+.btn-social-icon :first-child{border:none;text-align:center;width:100% !important}
+.btn-social-icon.btn-lg{height:45px;width:45px;padding-left:0;padding-right:0}
+.btn-social-icon.btn-sm{height:30px;width:30px;padding-left:0;padding-right:0}
+.btn-social-icon.btn-xs{height:22px;width:22px;padding-left:0;padding-right:0}
+.btn-facebook{color:#fff;background-color:#3b5998;border-color:rgba(0,0,0,0.2)}.btn-facebook:hover,.btn-facebook:focus,.btn-facebook:active,.btn-facebook.active,.open .dropdown-toggle.btn-facebook{color:#fff;background-color:#30487b;border-color:rgba(0,0,0,0.2)}
+.btn-facebook:active,.btn-facebook.active,.open .dropdown-toggle.btn-facebook{background-image:none}
+.btn-facebook.disabled,.btn-facebook[disabled],fieldset[disabled] .btn-facebook,.btn-facebook.disabled:hover,.btn-facebook[disabled]:hover,fieldset[disabled] .btn-facebook:hover,.btn-facebook.disabled:focus,.btn-facebook[disabled]:focus,fieldset[disabled] .btn-facebook:focus,.btn-facebook.disabled:active,.btn-facebook[disabled]:active,fieldset[disabled] .btn-facebook:active,.btn-facebook.disabled.active,.btn-facebook[disabled].active,fieldset[disabled] .btn-facebook.active{background-color:#3b5998;border-color:rgba(0,0,0,0.2)}
+
+
+img.img-circle {
+    width: 120px;
+    height: 120px;
+}
+
+
+.label.rank-label {
+    padding: 5px 17px 5px 10px;
+    border-radius: 27px;
+    padding-left: 16px;
+    background-color: black;
+}
+
+@media ( min-width: 768px ) {
+    .grid-divider {
+        position: relative;
+        padding: 0;
+    }
+    .grid-divider>[class*='col-'] {
+        position: static;
+    }
+    .grid-divider>[class*='col-']:nth-child(n+2):before {
+        content: "";
+        border-left: 1px solid #DDD;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+    }
+    .col-padding {
+        padding: 0 15px;
+    }
+}
