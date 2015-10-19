@@ -8,7 +8,21 @@
                 <div class="media">
                     <div class="media-body">
                         <div class="col-md-12">
-                            <h1 class="title">Cancheros</h1>
+                            <h1 class="title">
+                                |--------------------------------------------------------------------------
+                                IMPORTANTE HACER CAMBIO EN ARCHIVO
+
+
+<!--
+                                IMPORTANTE HACER CAMBIO EN ARCHIVO C:\xampp\htdocs\sorehcnac\vendor\adamwathan\eloquent-oauth\src\Authenticator.php
+                                PARA QUE SI YA EXISTE UN USUARIO CREADO POR FORMULARIO CON EL MISMO CORREO DE FACEBOOK SE MODIFIQUE SOBRE EL MISMO USUARIO
+                                if ($callback) {
+                                $user = $callback($user, $userDetails);
+                                }
+
+                                DESPUES BORRAR ESTO!!!!!!!!!!!!!
+                                */-->
+                                Cancheros</h1>
 
                             <p>Expertos del futbol Aficionado</p>
 
