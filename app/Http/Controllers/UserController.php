@@ -2,13 +2,16 @@
 
 namespace App\Http\Controllers;
 
+use Hash;
+use DB;
 use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
-use OAuth;
-use Illuminate\Support\Facades\Auth;
+use App\User;
+use Auth;
 
-class Welcome extends Controller
+
+class UserController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -17,15 +20,7 @@ class Welcome extends Controller
      */
     public function index()
     {
-        OAuth::login('facebook', function($user, $details) {
-            $user->name = $details->full_name;
-            $user->email = $details->email;
-            $user->save();
-        });
-
-       // dd(Auth::user());
-
-        return view('home.home');
+        //
     }
 
     /**
@@ -46,7 +41,15 @@ class Welcome extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $user = User::create([
+            'name' => $request->name,
+            'email' => $request->email,
+            'password' => Hash::make($request->password)
+        ]);
+
+        Auth::login($user);
+
+
     }
 
     /**
@@ -57,7 +60,27 @@ class Welcome extends Controller
      */
     public function show($id)
     {
-        //
+        $user = User::find($id);
+        return json_encode(array('valid' => false ));
+    }
+
+    /**
+     * Validate email user unique.
+     *
+     * @param  Request  $request
+     * @return valid
+     */
+    public function validatemail(Request $request)
+    {
+        $user = DB::table('users')->where('email', $request->email)->first();
+
+        if($user)
+            $valid = false;
+        else
+            $valid = true;
+
+        return json_encode(array('valid' => $valid ));
+
     }
 
     /**
@@ -80,7 +103,16 @@ class Welcome extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $name = $request->name;
+        $email = $request->email;
+        $password = Hash::make($request->password);
+
+        $user = User::findOrFail($id);
+        $user->name = $name;
+        $user->email = $email;
+        $user->password = $password;
+
+        $user->save();
     }
 
     /**

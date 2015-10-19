@@ -136,7 +136,10 @@ footer div.footer-ribbon:before {
     top: 0;
     width: 7px;
 }
-
+.container h2
+{
+    margin: 0;
+}
 footer div.container div.row > div {
     margin-bottom: 25px;
 }
